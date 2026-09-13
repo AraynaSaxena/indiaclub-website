@@ -59,7 +59,7 @@ const boardBranches: Branch[] = [
   {
     name: "Marketing",
     officers: [
-      { name: "Abhinav Nimmagadda", position: "VP Marketing", thumbnail: "/images/IClogo.png", email: "animmagadda7@gatech.edu" },
+      { name: "Abhinav Nimmagadda", position: "VP Marketing", thumbnail: "/images/current_exec/abhi.jpeg", email: "animmagadda7@gatech.edu" },
       { name: "Tanushri Kemisetti", position: "VP Marketing", thumbnail: "/images/current_exec/tanushri.png", email: "tkemisetti3@gatech.edu" },
     ],
   },
