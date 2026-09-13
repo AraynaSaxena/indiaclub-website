@@ -12,6 +12,7 @@ type Officer = {
   position: string;
   thumbnail: string;
   email: string;
+  objectPosition?: string;
 };
 
 type Branch = {
@@ -59,7 +60,7 @@ const boardBranches: Branch[] = [
   {
     name: "Marketing",
     officers: [
-      { name: "Abhinav Nimmagadda", position: "VP Marketing", thumbnail: "/images/current_exec/abhi.jpeg", email: "animmagadda7@gatech.edu" },
+      { name: "Abhinav Nimmagadda", position: "VP Marketing", thumbnail: "/images/current_exec/abhi.jpeg", email: "animmagadda7@gatech.edu", objectPosition: "object-bottom" },
       { name: "Tanushri Kemisetti", position: "VP Marketing", thumbnail: "/images/current_exec/tanushri.png", email: "tkemisetti3@gatech.edu" },
     ],
   },
@@ -106,7 +107,7 @@ export default function Officers() {
                         className={`${
                           officer.thumbnail.includes("IClogo")
                             ? "object-contain p-4"
-                            : "object-cover object-top"
+                            : `object-cover ${officer.objectPosition ?? "object-top"}`
                         } group-hover:scale-[1.02] transition-transform duration-300`}
                       />
                     </div>
