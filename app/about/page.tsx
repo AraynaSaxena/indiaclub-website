@@ -58,15 +58,17 @@ const GALLERY: { src: string; alt: string; position?: string }[] = [
 
 // Both president notes read as the same placeholder copy in the design.
 // President names/titles aren't legible in the screenshot -> TODO placeholders.
-const PRESIDENT_NOTE =
-  "Welcome to India Club at Georgia Tech! Our mission has always been simple: to create a space where students can celebrate culture, build lasting friendships, and feel at home. Whether you're attending your first Holi celebration, performing at Diwali Night, or simply meeting new people, India Club offers opportunities to connect, grow, and create memories that will last far beyond your time at Georgia Tech. What makes this organization special is the people.";
+const NOTE_1 =
+  "Hi! Welcome to India Club at Georgia Tech! I still remember coming to my first event and leaving with a group of friends I would end up spending the rest of the semester with. That's what I love most about India Club- it turns friends into family. It's become the place where I get to stay connected to my culture while sharing it with others. Through our events, we bring students from all across campus together to celebrate some of the richest and most time-honored Indian traditions. Whether you grew up playing Garba or you're celebrating Diwali for the very first time, there's a place for you here. I hope India Club becomes your home away from home, just like it did for me!";
+const NOTE_2 =
+  "Welcome to ICGT! To us, India Club at Georgia Tech is a family: a home away from home where we stay connected to our Indian culture and build lasting friendships. Through large-scale events that bring together students from across campus, we create opportunities to celebrate Indian culture and heritage while introducing others to the traditions, stories, and experiences that make it so special. We also help international students connect with resources and support as they find their place at Georgia Tech. As your presidents, we’re excited to share this community with you and hope you’ll find your home here, too!";
 
 // Headshots for the sitting board live in /public/images/current_exec (past
 // boards are kept in /public/images/old_exec). Shreya has no photo there yet,
 // so fall back to the logo placeholder until a real headshot is added.
 const PRESIDENTS = [
-  { photo: "/images/current_exec/anaya.jpg", alt: "Anaya headshot", note: PRESIDENT_NOTE, name: "Anaya" },
-  { photo: "/images/current_exec/shreya.jpeg", alt: "Shreya headshot placeholder", note: PRESIDENT_NOTE, name: "Shreya" },
+  { photo: "/images/current_exec/anaya.jpg", alt: "Anaya headshot", note: NOTE_1, name: "Anaya" },
+  { photo: "/images/current_exec/shreya.jpeg", alt: "Shreya headshot placeholder", note: NOTE_2, name: "Shreya" },
 ];
 
 export default function About() {

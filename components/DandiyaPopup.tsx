@@ -16,7 +16,7 @@ const EVENT_ENDS_AT = new Date("2026-10-18T02:00:00-04:00");
 // Bump this string to re-show the popup to people who already dismissed it.
 const DISMISS_KEY = "icgt-dandiya-popup-2026";
 
-const TICKETS_URL = "https://doorlist.app/e/vEG7LFv?s=K0op9TaUbh";
+const TICKETS_URL = "https://doorlist.app/e/kpWPEdz?s=K0op9TaUbh";
 
 const POSTER_SRC = "/images/dandiya-dhamaka.jpg";
 
